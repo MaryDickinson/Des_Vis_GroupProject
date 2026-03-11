@@ -5,19 +5,24 @@
 **Date:** 12th March 2026
 
 ## Project Overview
-For our group project, we chose to create a Ring Size Estimator. The goal for this was to place your hand flat next to a reference objext (card), and take a photo. The system then calculates your finger width, and maps it to a UK ring size.
+For our group project, we chose to create a Ring Size Estimator. The goal for this was to place your hand flat next to a reference objext (credit card), and take a photo. The system then calculates your finger width, and maps it to a UK ring size.
 
 The pipeline begins with HSV thresholding to segment the skin from the background. Morphological cleaning is then applied to refine the mask, followed by connected component analysis to isolate the largest skin region. Skeletonisation is then performed using bwmorph thinning to extract the centreline of the hand, and fingertips are identified as skeleton endpoints. The width is measured at a specified distance along the finger between the tip to the knuckle. Then, the card is detected via canny edge detection and used as a reference object to convert pixel measurements into millimetres. Finally, the finger width (pixels) is converted to a circumference (millimetres), which is compared against a table of UK ring sizes to return the closest matching letter size.
 
 ## Instructions
-* Place your hand flat on a **plain, light-coloured background** with fingers **spread apart** (see reference photo)
+* Place your hand flat on a **plain, light-coloured background** with fingers **spread apart** (*see reference photo below or on GUI*)
 * Place a standard credit card in **portrait orientation** (54 mm wide 85.6 mm tall)
 * Take the photo from directly above, an **overhead shot only**
 * Click "Browse..." to upload your photo
 * Select whether it's a right or left hand
 * Select which finger you'd like to measure first
-* Select your measurement position (0 indicates the tip of your finger, whereas 1 indicates the knuckle - we'd recommend starting at 0.45)
+* Select your measurement position (0 indicates the tip of your finger, 1 indicates the knuckle - we'd recommend starting at 0.45)
 * Click "Estimate ring size" and let our code do the rest!
+
+### Reference Photo
+
+<img width="659" height="496" alt="REFERENCE" src="https://github.com/user-attachments/assets/49fc3c09-831d-4378-bcf2-8ae1e913c1e7" />
+
 
 ## Example Case
 The example case shows a right hand with the index finger selected at position 0.5. The system correctly detected the Oyster card as the reference object, identified all five fingertips, and measured the index finger width at 18.6 mm (circumference 58.4 mm), returning a UK size S.
