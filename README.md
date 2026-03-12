@@ -25,9 +25,10 @@ The pipeline begins with HSV thresholding to segment the skin from the backgroun
 
 
 ## Example Case
-The example case shows a right hand with the index finger selected at position 0.5. The system correctly detected the Oyster card as the reference object, identified all five fingertips, and measured the index finger width at 18.6 mm (circumference 58.4 mm), returning a UK size S.
+The example case shows a right hand with the index finger selected at position 0.5. The system correctly detected the Oyster card as the reference object, identified all five fingertips, and measured the index finger width at 17.12 mm (circumference 53.80 mm), returning a UK size P.
 
-<img width="1295" height="740" alt="Screenshot 2026-03-11 at 21 33 01" src="https://github.com/user-attachments/assets/d7cd593c-6c19-401e-88df-8440fecb8ba0" />
+
+<img width="1301" height="740" alt="Screenshot 2026-03-12 at 12 07 52" src="https://github.com/user-attachments/assets/11caf4f5-fe53-4fdc-9c7d-6fb5c0be9752" />
 
 
 ## Strengths and Limitations
