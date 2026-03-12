@@ -1,9 +1,9 @@
 # Mary Dickinson Personal Statement 
 
-**Module:** Design of Visual Systems
-**Project:** Ring Size Estimator (`RingSizeGUI.m`)  
-**Author:** Mary Dickinson
-**Date:** 12th March 2026
+**Module:** Design of Visual Systems  
+**Project:** Ring Size Estimator (`RingSizeGUI.m`)   
+**Author:** Mary Dickinson  
+**Date:** 12th March 2026  
 
 ---
 
