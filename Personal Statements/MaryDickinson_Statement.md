@@ -11,13 +11,13 @@
 
 My primary responsibilities on this project were the early-stage image processing pipeline and the user interface. Specifically, I developed:
 
-- **Skin segmentation:** implementing the HSV-based thresholding approach used to isolate skin pixels from the background. This involved tuning the hue, saturation and value ranges to produce a reliable binary mask of the hand across a range of test images.
+- **Skin segmentation:** Implementing the HSV-based thresholding approach used to isolate skin pixels from the background. This involved tuning the hue, saturation and value ranges to produce a reliable binary mask of the hand across a range of test images.
 
-- **Morphological cleaning:** developing the post-segmentation cleanup steps, including erosion to disconnect touching regions and between-finger shadows.
+- **Morphological cleaning:** Developing the post-segmentation cleanup steps, including erosion to disconnect touching regions and between-finger shadows.
 
-- **GUI setup:** building the full graphical user interface in MATLAB, including the three-panel layout (Settings, Instructions and Annotated Result), the colour scheme, interactive controls (browse button, radio buttons, dropdown, editable measurement position field), the status bar, and the result display with the UK ring size badge.
+- **GUI setup:** Building the full graphical user interface in MATLAB, including the three-panel layout (Settings, Instructions and Annotated Result), the colour scheme, interactive controls (browse button, radio buttons, dropdown, editable measurement position field), the status bar, and the result display with the UK ring size badge.
 
-- **Shadow rejection development:**  I investigated and attempted to extend the skin segmentation to exclude shadow regions from the mask. Shadows on light backgrounds frequently contain hue and saturation values that fall within the skin tone range, causing them to be incorrectly included. I explored additional constraints and post-processing steps to mitigate this, but the results were inconsistent across different images and lighting conditions. After evaluation, the decision was made to retain the current segmentation approach with stricter instructions for use rather than introduce a less reliable shadow-rejection step.
+- **Shadow rejection development:** I investigated and attempted to extend the skin segmentation to exclude shadow regions from the mask. Shadows on light backgrounds frequently contain hue and saturation values that fall within the skin tone range, causing them to be incorrectly included. I explored additional constraints and post-processing steps to mitigate this, but the results were inconsistent across different images and lighting conditions. After evaluation, the decision was made to retain the current segmentation approach with stricter instructions for use rather than introduce a less reliable shadow-rejection step.
 
 ---
 
