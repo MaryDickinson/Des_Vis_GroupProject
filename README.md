@@ -2,7 +2,7 @@
 
 **Authors:** Mary Dickinson, Nicole Stott, Eleni Papatheofanous
 
-**Date:** Xth March 2026
+**Date:** 12th March 2026
 
 ## Project Overview
 For our group project, we chose to create a Ring Size Estimator. The goal for this was to place your hand flat next to a reference objext (credit card), and take a photo. The system then calculates your finger width, and maps it to a UK ring size.
