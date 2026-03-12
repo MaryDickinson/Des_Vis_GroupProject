@@ -23,7 +23,7 @@ The pipeline begins with HSV thresholding to segment the skin from the backgroun
 
 ### Reference Photo
 
-<img width="659" height="496" alt="REFERENCE" src="https://github.com/user-attachments/assets/49fc3c09-831d-4378-bcf2-8ae1e913c1e7" />
+<img width="1118" height="944" alt="REFERENCE" src="https://github.com/user-attachments/assets/f1090188-28fb-4b8b-a3ac-fe9a42a97b9d" />
 
 
 ## Example Case
