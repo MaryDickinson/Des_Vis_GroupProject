@@ -45,6 +45,6 @@ The graphical user interface makes the tool straightforward to use. The annotate
 
 The skin segmentation relies on HSV thresholding, which is sensitive to lighting conditions. Shadows cast behind the hand can be misidenfitied as skin, increase the finger width measurement. Similarly, if the background is not sufficiently light and plain, the hand may not separate clearly from it. 
 
-The card detection can also be unreliable in certain conditions. If the card is too light in colour, the Canny edge detector may fail to detect it. In some cases, printed details or markings on the card surface are detected instead of the card itself. 
+The card detection can also be unreliable in certain conditions. If the card is too light in colour or too similar to the skin tone, the Canny edge detector may fail to detect it. In some cases, printed details or markings on the card surface are detected instead of the card itself. 
 
 The measurement position parameter also causes errors at higher values. Settings above approximately 0.5 can cause the measured width to span across adjacent fingers rather than isolating the target finger, leading to an overestimate of the finger diameter. 
