@@ -19,6 +19,8 @@ The pipeline begins with HSV thresholding to segment the skin from the backgroun
 * Select your measurement position (0 indicates the tip of your finger, 1 indicates the knuckle - we'd recommend starting at 0.45)
 * Click "Estimate ring size" and let our code do the rest!
 
+*See the "assets" folder for photos to test it out!
+
 ### Reference Photo
 
 <img width="659" height="496" alt="REFERENCE" src="https://github.com/user-attachments/assets/49fc3c09-831d-4378-bcf2-8ae1e913c1e7" />
