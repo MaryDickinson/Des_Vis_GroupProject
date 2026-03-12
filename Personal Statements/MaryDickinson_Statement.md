@@ -11,7 +11,7 @@
 
 My primary responsibilities on this project were the early-stage image processing pipeline and the user interface. Specifically, I developed:
 
-- **Skin segmentation:** — implementing the HSV-based thresholding approach used to isolate skin pixels from the background. This involved tuning the hue, saturation and value ranges to produce a reliable binary mask of the hand across a range of test images.
+- **Skin segmentation:** implementing the HSV-based thresholding approach used to isolate skin pixels from the background. This involved tuning the hue, saturation and value ranges to produce a reliable binary mask of the hand across a range of test images.
 
 - **Morphological cleaning:** developing the post-segmentation cleanup steps, including erosion to disconnect touching regions and between-finger shadows.
 
