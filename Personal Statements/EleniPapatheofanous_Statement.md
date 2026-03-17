@@ -27,15 +27,15 @@ In addition, I was responsible for creating and writing the manual for our final
 
 ### What I Learned
 
-**Shape over colour for object detection:** Several approaches to card detection failed before Canny edge detection worked. Colour-based detection excluded the card when it matched the skin tone range, and brightness-based detection merged it with the background. This taught me that searching for shape is more robust than searching for appearance.
+**Shape over colour for object detection:** several approaches to card detection failed before Canny edge detection worked. Colour-based detection excluded the card when it matched the skin tone range, and brightness-based detection merged it with the background. This taught me that searching for shape is more robust than searching for appearance.
 
-**Connected skeletons cause measurement drift:** Because the whole hand skeleton is one connected structure, the skeleton walk could drift into adjacent fingers. This wasn't obvious until multiple fingers returned identical path lengths of 601 pixels, meaning the walk was hitting the step limit every time rather than following each individual finger.
+**Connected skeletons cause measurement drift:** because the whole hand skeleton is one connected structure, the skeleton walk could drift into adjacent fingers. This wasn't obvious until multiple fingers returned identical path lengths, meaning the walk was hitting the step limit every time rather than following each individual finger.
 
 ### Design Decisions
 
-**Canny edge detection for card detection:** Finds the card's rectangular outline directly rather than relying on colour or brightness, making it work regardless of card colour.
+**Canny edge detection for card detection:** finds the card's rectangular outline directly rather than relying on colour or brightness, making it work regardless of card colour.
 
-**Column band constraint on skeleton walk:** Restricting each finger's walk to its own horizontal region of the image prevents the path drifting into adjacent fingers or the palm.
+**Column band constraint on skeleton walk:** restricting each finger's walk to its own horizontal region of the image prevents the path drifting into adjacent fingers or the palm.
 
 ### What I Would Do Differently
 
